@@ -3,63 +3,78 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 import ContactCTA from "../components/ContactCTA.astro";
 import Hero from "../components/Hero.astro";
+import { Markdown } from "@astropub/md";
 ---
 
-<BaseLayout
-  title="About | Amalya Megerman"
-  description="About Amalya Megerman Lorem Ipsum"
->
+<BaseLayout title="About | Amalya Megerman" description="About Amalya Megerman">
   <div class="stack gap-20">
     <main class="wrapper about">
-      <Hero
-        title="About"
-        tagline="Thanks for stopping by. Read below to learn more about myself and my background."
-      >
-        <img
-          width="1553"
-          height="873"
-          src="/assets/at-work.jpg"
-          alt="Amalya Megerman at work with a colleague"
-        />
-      </Hero>
+      <Hero title="About" />
 
       <section>
         <h2 class="section-title">Background</h2>
         <div class="content">
           <p>
-            Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a>
-            makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum
-            vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra
-            diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus
-            in ornare.
+            I am a full-stack software engineer with experience in React,
+            TypeScript/JavaScript, Next.js, Express, SQL, HTML/CSS, Google Cloud
+            Services, and <a href="#skills">more</a>. I have a background in
+            education, art/design, and proficiency in Mandarin Chinese. I have a
+            proven track record of learning and implementing new skills quickly
+            and effectively and translating complex topics for non-technical
+            audiences. I love creating intuitive and user-friendly UIs and
+            learning new languages and frameworks! I am ambitious, hardworking,
+            a voracious learner, and eager to grow.
           </p>
+          <br />
           <p>
-            Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget
-            gravida cum sociis natoque penatibus. Cras fermentum odio eu feugiat
-            pretium nibh. Proin nibh nisl condimentum id venenatis. Porta nibh
-            venenatis cras sed felis eget velit. Id diam vel quam elementum
-            pulvinar etiam non.
-          </p>
-          <p>
-            Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut
-            sem viverra aliquet eget sit amet. Lacus luctus accumsan tortor
-            posuere ac ut consequat semper viverra. Viverra accumsan in nisl
-            nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-            pretium fusce.
+            Outside of tech, I have 8+ years experience in education (curriculum
+            development, art history, anthropology, college essay writing, and
+            more), and experience working for non-profits like Charity Navigator
+            and Kehillat Beijing, the oldest expat Jewish community in Beijing.
+            I lived in China for a cumulative 3+ years, where I developed strong
+            Mandarin skills. I am also an accomplished artist and have exhibited
+            in over 22 shows and received over 15 grants, fellowships, and
+            residencies in support of my work. I work in sculpture,
+            installation, stained glass, video, and performance.
           </p>
         </div>
       </section>
       <section>
         <h2 class="section-title">Education</h2>
         <div class="content">
-          <p>Corporis voluptates tenetur laudantium.</p>
+          <p>App Academy Open (2024)</p>
+          <p>Full-stack web development bootcamp</p>
+        </div>
+        <div class="content">
+          <p>freeCodeCamp (2022)</p>
+          <p>
+            <a
+              href="https://www.freecodecamp.org/certification/amalyam/javascript-algorithms-and-data-structures"
+              >JavaScript Algorithms and Data Structures</a
+            >
+          </p>
+        </div>
+        <div class="content">
+          <p>Princeton University, magna cum laude (2016)</p>
+          <p>A.B. in Anthropology</p>
+          <p>Certificates in Visual Arts and Chinese Language & Culture</p>
         </div>
       </section>
       <section>
-        <h2 class="section-title">Skills</h2>
+        <h2 class="section-title" id="skills">Skills</h2>
         <div class="content">
-          <p>officia unde omnis</p>
+          <h6 class="mb-4 underline">Experienced</h6>
+          <p class="badges">
+            <Markdown.Inline
+              of={`![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![Next.js](https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=nextdotjs&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![SQLite](https://img.shields.io/badge/Sqlite-003B57?style=for-the-badge&logo=sqlite&logoColor=white) ![Sequelize]( 	https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white) ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Material UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)`}
+            />
+          </p>
+          <h6 class="mt-12 mb-4 underline">Learning</h6>
+          <p class="badges">
+            <Markdown.Inline
+              of={`![Postgres](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20.svg?style=for-the-badge&logo=Django&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)`}
+            />
+          </p>
         </div>
       </section>
     </main>
@@ -88,6 +103,12 @@ import Hero from "../components/Hero.astro";
     color: var(--gray-200);
   }
 
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 900px;
+  }
   .section-title {
     grid-column-start: 1;
     font-size: var(--text-xl);
