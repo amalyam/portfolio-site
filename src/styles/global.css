@@ -253,3 +253,8 @@ h5 {
 		gap: 12rem;
 	}
 }
+
+.portrait-image {
+	width: 500px;
+	height: 500px;
+}
